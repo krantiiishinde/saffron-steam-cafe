@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saffron & Steam is a premium Indian café serving chai, filter coffee, breakfast favorites, and handcrafted sweets."
+    />
+    <meta name="theme-color" content="#20150f" />
+    <title>Saffron & Steam | Indian Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-ring"></div>
+    </div>
+
+    <div class="progress-bar" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a href="#home" class="logo" aria-label="Saffron and Steam home">
+          <span class="logo-mark">☕</span>
+          <span class="logo-text">Saffron & Steam</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#offers">Offers</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Indian chai • Filter coffee • Freshly baked comfort</p>
+          <h1>Where tradition meets the perfect cup.</h1>
+          <p class="hero-copy">
+            Step into a warm, elegant café that serves aromatic masala chai, rich filter coffee, and nostalgic breakfast favorites with modern flair.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#reservation" class="btn btn-secondary">Book a Table</a>
+          </div>
+          <div class="typing-line" aria-live="polite">Crafted with passion • Freshly roasted • Locally loved</div>
+          <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span></span>
+          </a>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="cup">
+            <div class="cup-handle"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container split-grid">
+          <div class="about-media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80"
+              alt="A cozy Indian café interior with warm lighting"
+              loading="eager"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow">Our Story</p>
+            <h2>Inspired by home recipes and modern coffee culture.</h2>
+            <p>
+              Saffron & Steam began as a cozy gathering place where the comfort of Indian hospitality meets the sophistication of modern café culture.
+            </p>
+            <p>
+              From masala chai to house-made khari and signature filter coffee, every dish is crafted to bring warmth, nostalgia, and indulgence to every visit.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <span>✦</span>
+                <p>Single-origin coffee with Indian spice notes</p>
+              </div>
+              <div class="feature-item">
+                <span>✦</span>
+                <p>Freshly baked khari, buns, and sweets each morning</p>
+              </div>
+              <div class="feature-item">
+                <span>✦</span>
+                <p>Warm, thoughtful service with a home-like welcome</p>
+              </div>
+            </div>
+
+            <div class="stats">
+              <div class="stat-card">
+                <h3 class="counter" data-target="12">0</h3>
+                <p>Years of Craft</p>
+              </div>
+              <div class="stat-card">
+                <h3 class="counter" data-target="98">0</h3>
+                <p>Happy Guests</p>
+              </div>
+              <div class="stat-card">
+                <h3 class="counter" data-target="25">0</h3>
+                <p>Signature Items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Signature Menu</p>
+            <h2>Indian comfort classics, elevated for every mood.</h2>
+          </div>
+
+          <div class="filter-group reveal" role="tablist" aria-label="Menu categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="tea">Tea</button>
+            <button class="filter-btn" data-filter="dessert">Desserts</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="cold">Cold Drinks</button>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card reveal" data-category="coffee">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Masala Chai Latte</h3>
+              <p>Spiced chai blended with steamed milk and cardamom warmth.</p>
+              <span>₹180</span>
+            </article>
+            <article class="menu-card reveal" data-category="tea">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Cardamom Rose Tea</h3>
+              <p>Fragrant rose and cardamom tea with a delicate finish.</p>
+              <span>₹150</span>
+            </article>
+            <article class="menu-card reveal" data-category="dessert">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Gulab Jamun Cheesecake</h3>
+              <p>Silky cheesecake with a rich gulab jamun-inspired swirl.</p>
+              <span>₹220</span>
+            </article>
+            <article class="menu-card reveal" data-category="breakfast">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Desi Breakfast Plate</h3>
+              <p>Poha, masala omelette, and toasted bun with butter.</p>
+              <span>₹260</span>
+            </article>
+            <article class="menu-card reveal" data-category="cold">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Nimbu Paani Cooler</h3>
+              <p>Refreshing mint, lemon, and cumin cooler with a sparkle.</p>
+              <span>₹140</span>
+            </article>
+            <article class="menu-card reveal" data-category="coffee">
+              <button class="heart-btn" aria-label="Save item">♡</button>
+              <h3>Filter Coffee</h3>
+              <p>Classic South Indian filter coffee with frothy richness.</p>
+              <span>₹160</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers section" id="offers">
+        <div class="container offer-banner reveal">
+          <div>
+            <p class="eyebrow">Limited Time</p>
+            <h2>Monsoon Chai Fest — 20% off this weekend.</h2>
+            <p>Reserve your table before sunset and enjoy a complimentary khari with every chai order.</p>
+          </div>
+          <div class="countdown">
+            <div><span id="days">00</span><small>Days</small></div>
+            <div><span id="hours">00</span><small>Hours</small></div>
+            <div><span id="minutes">00</span><small>Minutes</small></div>
+            <div><span id="seconds">00</span><small>Seconds</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why Choose Us</p>
+            <h2>Thoughtful comfort in every detail.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon-box">☕</div>
+              <h3>Premium Ingredients</h3>
+              <p>Fresh spices, locally sourced dairy, and house-roasted coffee beans.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon-box">📶</div>
+              <h3>Free WiFi</h3>
+              <p>Stay connected while savoring chai, breakfast, and conversation.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon-box">⚡</div>
+              <h3>Fast Service</h3>
+              <p>Quick bites, swift service, and a warm welcome every time.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon-box">🕯️</div>
+              <h3>Cozy Atmosphere</h3>
+              <p>Soft lighting, plush seating, and a calm room for lingering conversations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="chef section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Meet the Team</p>
+            <h2>Our chefs bring warmth and artistry to every plate.</h2>
+          </div>
+          <div class="chef-grid">
+            <article class="chef-card reveal">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Chef Maya" loading="lazy" />
+              <h3>Maya Rao</h3>
+              <p>Pastry Chef</p>
+              <div class="social-links">
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="Twitter">◌</a>
+                <a href="#" aria-label="LinkedIn">◍</a>
+              </div>
+            </article>
+            <article class="chef-card reveal">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Chef Daniel" loading="lazy" />
+              <h3>Arjun Mehta</h3>
+              <p>Head Barista</p>
+              <div class="social-links">
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="Twitter">◌</a>
+                <a href="#" aria-label="LinkedIn">◍</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Gallery</p>
+            <h2>A look inside our world of spice, steam, and comfort.</h2>
+          </div>
+          <div class="gallery-grid">
+            <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Cafe interior" loading="lazy" />
+            <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=800&q=80" alt="Coffee and pastries" loading="lazy" />
+            <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Latte art" loading="lazy" />
+            <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=800&q=80" alt="Morning breakfast" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2>What our guests are saying about their favorite corner.</h2>
+          </div>
+          <div class="testimonial-slider reveal">
+            <article class="testimonial active">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Guest profile" loading="lazy" />
+              <p>“The best chai and snacks in the city—every detail feels thoughtful and beautifully crafted.”</p>
+              <h3>Ananya R.</h3>
+              <div class="stars">★★★★★</div>
+            </article>
+            <article class="testimonial">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Guest profile" loading="lazy" />
+              <p>“A stunning place to work, relax, and indulge in the finest Indian treats.”</p>
+              <h3>Vikram P.</h3>
+              <div class="stars">★★★★★</div>
+            </article>
+            <article class="testimonial">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="Guest profile" loading="lazy" />
+              <p>“Beautiful ambiance and exceptional service. We come back every week for chai.”</p>
+              <h3>Sophia L.</h3>
+              <div class="stars">★★★★★</div>
+            </article>
+          </div>
+          <div class="slider-dots" aria-label="Testimonial navigation"></div>
+        </div>
+      </section>
+
+      <section class="reservation section" id="reservation">
+        <div class="container split-grid">
+          <div class="reservation-copy reveal">
+            <p class="eyebrow">Reservations</p>
+            <h2>Reserve your perfect table.</h2>
+            <p>From intimate breakfast dates to evening chai catchups, our space is ready for every moment.</p>
+          </div>
+          <form class="reservation-form reveal" id="reservationForm" novalidate>
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Full name" required />
+            </div>
+            <div class="input-group">
+              <input type="email" name="email" placeholder="Email address" required />
+            </div>
+            <div class="input-group">
+              <input type="tel" name="phone" placeholder="Phone number" required />
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <input type="date" name="date" required />
+              </div>
+              <div class="input-group">
+                <input type="time" name="time" required />
+              </div>
+            </div>
+            <div class="input-group">
+              <select name="guests" required>
+                <option value="">Guests</option>
+                <option>2 Guests</option>
+                <option>4 Guests</option>
+                <option>6 Guests</option>
+                <option>8+ Guests</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Reservation</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Everything you may want to know.</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details open>
+              <summary>Do you offer vegan options?</summary>
+              <p>Yes, our menu includes plant-based pastries and dairy-free drinks.</p>
+            </details>
+            <details>
+              <summary>Can I host a private event?</summary>
+              <p>Absolutely. We can arrange intimate celebrations and evening gatherings.</p>
+            </details>
+            <details>
+              <summary>Is there outdoor seating?</summary>
+              <p>We offer a charming terrace with weather-ready seating during warmer months.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="journal section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">From the Journal</p>
+            <h2>Stories, sips, and seasonal inspiration.</h2>
+          </div>
+          <div class="journal-grid">
+            <article class="journal-card reveal">
+              <img src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=900&q=80" alt="Coffee beans and cups" loading="lazy" />
+              <h3>The art of slow mornings</h3>
+              <p>How our team builds calm, beautiful routines around the first pour of the day.</p>
+            </article>
+            <article class="journal-card reveal">
+              <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80" alt="Artisan dessert" loading="lazy" />
+              <h3>Seasonal pastries worth savoring</h3>
+              <p>Our pastry chef shares the ingredients and inspiration behind this month’s menu.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container split-grid">
+          <div class="contact-card reveal">
+            <p class="eyebrow">Visit Us</p>
+            <h2>We’d love to welcome you.</h2>
+            <p>12, Rosewood Lane, Mumbai, India</p>
+            <p>hello@saffronandsteam.com</p>
+            <p>+91 98765 43210</p>
+            <p>Mon–Fri: 7am to 10pm</p>
+            <p>Sat–Sun: 8am to 11pm</p>
+          </div>
+          <div class="contact-card reveal">
+            <iframe
+              title="Cafe location map"
+              src="https://www.google.com/maps?q=Pune,India&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Saffron & Steam</h3>
+          <p>Indian comfort, aromatic chai, and beautifully crafted café moments in Mumbai, India.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#reservation">Reservation</a>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Saffron & Steam. All rights reserved.</p>
+        <div class="social-links footer-socials">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Pinterest">◌</a>
+          <a href="#" aria-label="TikTok">◍</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <button class="floating-chat" aria-label="Live chat">💬</button>
+    <a class="floating-whatsapp" href="https://wa.me/15550142087" aria-label="WhatsApp">🟢</a>
+
+    <div class="modal" id="successModal" aria-hidden="true">
+      <div class="modal-card">
+        <h3>Reservation Confirmed</h3>
+        <p>Your request has been received. We’ll contact you shortly.</p>
+        <button class="btn btn-primary close-modal">Close</button>
+      </div>
+    </div>
+
+    <div class="modal" id="popupModal" aria-hidden="true">
+      <div class="modal-card">
+        <h3>Join Our Newsletter</h3>
+        <p>Get first access to seasonal menus and private events.</p>
+        <button class="btn btn-primary close-modal">Dismiss</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
